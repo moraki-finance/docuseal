@@ -1,5 +1,11 @@
 # Docuseal API Connector
 
+<a href="https://codecov.io/github/moraki-finance/docuseal" >
+ <img src="https://codecov.io/github/moraki-finance/docuseal/graph/badge.svg?token=SKTT14JJGV"/>
+</a>
+
+[![Tests](https://github.com/moraki-finance/docuseal/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/moraki-finance/docuseal/actions/workflows/main.yml)
+
 A lightweight API connector for docuseal. Docuseal API docs: https://www.docuseal.co/docs/api
 
 :warning: The extracted API objects don't do input parameters validations. It's a simple faraday wrapper that allows you to send as many inputs as you want. The docuseal API might fail when passing a wrong set of parameters.
