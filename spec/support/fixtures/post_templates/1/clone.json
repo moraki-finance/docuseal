@@ -1,0 +1,58 @@
+{
+  "id": 6,
+  "slug": "Xc7opTqwwV9P7x",
+  "name": "Cloned Template",
+  "schema": [
+    {
+      "attachment_uuid": "68aa0716-61f0-4535-9ba4-6c00f835b080",
+      "name": "sample-document"
+    }
+  ],
+  "fields": [
+    {
+      "uuid": "93c7065b-1b19-4551-b67b-9946bf1c11c9",
+      "submitter_uuid": "ad128012-756d-4d17-b728-6f6b1d482bb5",
+      "name": "Name",
+      "type": "text",
+      "required": true,
+      "areas": [
+        {
+          "page": 0,
+          "attachment_uuid": "09a8bc73-a7a9-4fd9-8173-95752bdf0af5",
+          "x": 0.403158189124654,
+          "y": 0.04211750189825361,
+          "w": 0.100684625476058,
+          "h": 0.01423690205011389
+        }
+      ]
+    }
+  ],
+  "submitters": [
+    {
+      "name": "First Party",
+      "uuid": "ad128012-756d-4d17-b728-6f6b1d482bb5"
+    }
+  ],
+  "author_id": 1,
+  "account_id": 1,
+  "archived_at": null,
+  "created_at": "2023-12-14T15:50:21.799Z",
+  "updated_at": "2023-12-14T15:50:21.799Z",
+  "source": "api",
+  "folder_id": 2,
+  "external_id": null,
+  "author": {
+    "id": 1,
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@example.com"
+  },
+  "documents": [
+    {
+      "id": 9,
+      "uuid": "ded62277-9705-4fac-b5dc-58325d4102eb",
+      "url": "ttps:/docuseal.co/hash/sample-document.pdf",
+      "filename": "sample-document.pdf"
+    }
+  ]
+}

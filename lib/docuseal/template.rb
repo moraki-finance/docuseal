@@ -16,7 +16,13 @@ module Docuseal
     # https://www.docuseal.co/docs/api#update-template-documents
     def self.update_documents(id, documents: [])
       return if documents.empty?
-      response = Docuseal::Client.instance.put(path: "#{path}/#{id}/documents", body: {documents:})
+      response = Docuseal::Client.instance.put("#{path}/#{id}/documents", data: {documents:})
+      new(response.body)
+    end
+
+    # https://www.docuseal.co/docs/api#clone-a-template
+    def self.clone(id, **attrs)
+      response = Docuseal::Client.instance.post("#{path}/#{id}/clone", data: attrs)
       new(response.body)
     end
   end

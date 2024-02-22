@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "source": "link",
+      "submitters_order": "random",
+      "audit_log_url": "https://docuseal.co/blobs/proxy/hash/example.pdf",
+      "created_at": "2023-12-10T15:48:17.166Z",
+      "updated_at": "2023-12-10T15:49:21.895Z",
+      "submitters": [
+        {
+          "id": 1,
+          "unid": "0954d146-db8c-4772-aafe-2effc7c0e0c0",
+          "email": "submitter@example.com",
+          "slug": "dsEeWrhRD8yDXT",
+          "sent_at": "2023-12-14T15:45:49.011Z",
+          "opened_at": "2023-12-14T15:48:23.011Z",
+          "completed_at": "2023-12-14T15:49:21.701Z",
+          "created_at": "2023-12-10T15:48:17.173Z",
+          "updated_at": "2023-12-14T15:50:21.799Z",
+          "name": "John Doe",
+          "phone": "+1234567890",
+          "status": "completed"
+        }
+      ],
+      "template": {
+        "id": 1,
+        "name": "Example Template",
+        "created_at": "2023-12-14T15:50:21.799Z",
+        "updated_at": "2023-12-14T15:50:21.799Z"
+      },
+      "created_by_user": {
+        "id": 1,
+        "first_name": "Bob",
+        "last_name": "Smith",
+        "email": "bob.smith@example.com"
+      }
+    }
+  ],
+  "pagination": {
+    "count": 1,
+    "next": 1,
+    "prev": 1
+  }
+}
