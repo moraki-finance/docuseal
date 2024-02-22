@@ -20,9 +20,9 @@ module Docuseal
     DEFAULT_REQUEST_TIMEOUT = 120
 
     def initialize
-      @api_key = nil
+      @api_key = ENV["DOCUSEAL_API_KEY"]
       @request_timeout = DEFAULT_REQUEST_TIMEOUT
-      @base_uri = DEFAULT_BASE_URI
+      @base_uri = ENV.fetch("DOCUSEAL_BASE_URI", DEFAULT_BASE_URI)
       @global_headers = {}
     end
 

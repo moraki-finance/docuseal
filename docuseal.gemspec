@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Martin Mochetti"]
   spec.email = ["martin.mochetti@gmail.com"]
 
-  spec.summary = "A lightweight docuseal API wrapper."
-  spec.description = "A non-official docuseal API wrapper. It's a lightweight and simple gem to use the docuseal API. It's a work in progress, so it's not recommended to use it in production yet."
+  spec.summary = "A lightweight docuseal API connector."
+  spec.description = "A lightway, simple and non-official docuseal API connector."
   spec.homepage = "https://github.com/moraki-finance/docuseal"
   spec.license = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 3.0.0")
