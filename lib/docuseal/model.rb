@@ -66,7 +66,7 @@ module Docuseal
 
       attrs.each do |key, value|
         if self.class.skip_coertion_for.include?(key.to_sym)
-          instance_variable_set("@#{key}", value)
+          instance_variable_set(:"@#{key}", value)
         else
           coerced_value = if value.is_a?(Hash)
             Docuseal::Model.new(value)
@@ -75,7 +75,7 @@ module Docuseal
           else
             value
           end
-          instance_variable_set("@#{key}", coerced_value)
+          instance_variable_set(:"@#{key}", coerced_value)
         end
       end
 
