@@ -14,14 +14,11 @@ jobs:
     strategy:
       matrix:
         ruby:
-          - '2.6.10'
+          - "2.6.10"
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: ${{ matrix.ruby }}
-        bundler-cache: true
-    - name: Run the default task
-      run: bundle exec rake
+      - uses: actions/checkout@v3
+      - name: Install Ruby version specified in `.ruby-version`
+        uses: eregon/use-ruby-action@master # this will use by default the .ruby-version file in your repository
+      - name: Run the default task
+        run: bundle exec rake
