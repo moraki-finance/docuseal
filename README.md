@@ -92,7 +92,7 @@ Reference: https://www.docuseal.co/docs/api#create-submissions-from-emails
 
 ```rb
 submission = Docuseal::Submission.create(
-  from: :emails
+  from: :emails,
   template_id: 1000001,
   emails: 'hi@docuseal.co, example@docuseal.co'
 )
