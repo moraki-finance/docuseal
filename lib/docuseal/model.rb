@@ -71,7 +71,9 @@ module Docuseal
           coerced_value = if value.is_a?(Hash)
             Docuseal::Model.new(value)
           elsif value.is_a?(Array)
-            value.map { |v| Docuseal::Model.new(v) }
+            value.map do |v|
+              v.is_a?(Hash) ? Docuseal::Model.new(v) : v
+            end
           else
             value
           end
