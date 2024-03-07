@@ -12,7 +12,7 @@ gem "rspec", "~> 3.0"
 gem "standard", "~> 1.3"
 
 group :development, :test do
-  gem "webmock", "~> 3.22.0"
+  gem "webmock", "~> 3.23.0"
   gem "byebug", "~> 11.1"
   gem "pry", "~> 0.14.2"
   gem "pry-byebug", "~> 3.10"
