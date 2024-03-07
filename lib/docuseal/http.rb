@@ -37,16 +37,12 @@ module Docuseal
     private
 
     def conn
-      connection = Faraday.new do |f|
+      Faraday.new do |f|
         f.options[:timeout] = request_timeout
         f.request :json
         f.response :json
         f.response :raise_error
       end
-
-      @faraday_middleware&.call(connection)
-
-      connection
     end
 
     def uri(path:, query: {})
